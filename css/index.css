@@ -27,7 +27,7 @@
 }
 #typed1 {
   color: #fff;
-  font-size: 2.5em;
+  font-size: 3em;
   font-weight: bold;
   line-height: 70px;
   display: block;
@@ -36,7 +36,7 @@
 #typed1 em {
   font-weight: bold;
   font-style: normal;
-  color: #e1f16c;
+  color: #ffffff;
 }
 .type a {
   margin-bottom: 25px;
@@ -119,7 +119,7 @@
   font-weight: bold;
 }
 
-.profile-text button:hover{
+.profile-text button:hover {
   opacity: 0.5;
   cursor: pointer;
   box-shadow: #ccc;
@@ -199,7 +199,7 @@
   position: absolute;
   width: 93%;
   height: 62%;
-  background-image: url(../images/축산물위생교육원\ 리디자인_-1이향희.png);
+  background-image: url();
   background-size: cover;
   left: 15px;
   top: 19px;
@@ -218,7 +218,7 @@
   position: absolute;
   width: 86%;
   height: 81%;
-  background-image: url(../images/축산물-리디자인\ 모바일.png);
+  background-image: url();
   background-size: cover;
   left: 15px;
   top: 22px;
@@ -237,14 +237,13 @@
   position: absolute;
   width: 90%;
   height: 93%;
-  background-image: url(../images/축산물-리디자인\ 모바일.png);
+  background-image: url();
   background-size: cover;
   left: 7px;
   top: 8px;
   background-position: center top;
   border-radius: 5px;
 }
-
 
 .content .web-swiper .work-content .work-img > div:hover::after {
   transition: 5s;
@@ -299,6 +298,7 @@
   padding: 2% 6%;
   border-radius: 5px;
   background-color: #ffc312;
+  border: 2px solid #ddd;
   cursor: pointer;
   transition: 0.5s;
   text-transform: uppercase;
@@ -310,7 +310,7 @@
   margin: 0 4%;
 }
 .content .web-swiper .work-content .work-desc .btn-wrap ul li:hover {
-  box-shadow: -75px 0 0 0 #fac8c8 inset, 75px 0 0 0 #fac8c8 inset;
+  box-shadow: -75px 0 0 0 #c5e98c inset, 75px 0 0 0 #c5e98c inset;
 }
 .content .web-swiper .work-content .work-desc .btn-wrap ul li:hover a {
   color: #fff;
@@ -360,20 +360,18 @@
   padding: 0 40px 50px 40px;
 }
 
-.design-swiper button{
+.design-swiper button {
   position: relative;
   justify-content: center;
   align-items: center;
-  
 }
-.design-swiper  h3 {
+.design-swiper h3 {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
   font-size: 18px;
-
 }
 
 .design-work-content {
@@ -442,7 +440,7 @@
   padding-bottom: 100px;
 }
 .contact-content {
-  background-color: #c3e0a3;
+  background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 50px 30px;
