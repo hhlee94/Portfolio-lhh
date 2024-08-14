@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+[data-dark="true"] body{background-color: #333;}
+[data-dark="true"] .header{background-color: #333; border-bottom: 1px solid #3a3b3d;}
+[data-dark="true"] .header ul li a{color: #ccc;}
+[data-dark="true"] .header ul li.on a{color: #d9d9d9;}
+[data-dark="true"] .header ul li.on::after,
+[data-dark="true"] .header ul li:hover::after{
+    background-color: #d9d9d9;
+}
+[data-dark="true"] .header .etc ul li ul{background-color: #272929;}
+[data-dark="true"] #typed1{color: #d9d9d9;}
+[data-dark="true"] .type a{background-color: #272929; color: #d9d9d9; border-color: #3d3d3d;}
+
+[data-dark="true"] .m-btn .line{background-color: #d9d9d9;}
+[data-dark="true"] .m-nav{background-color: #272929;}
+
+[data-dark="true"] .m-nav .pic p,
+[data-dark="true"] .m-nav ul li a{color: #d9d9d9;}
+[data-dark="true"] .m-nav ul li{border-color: #d9d9d9;}
+
+[data-dark="true"] .content .content-wrap,
+[data-dark="true"] .profile-content{background-color: #272929; border-color: #3d3d3d;}
+
+[data-dark="true"] .content .title,
+[data-dark="true"] .profile-content p,
+[data-dark="true"] .profile-content h3{color: #d9d9d9;}
+
+[data-dark="true"] .content .title h3::after{background-color: #d9d9d9;}
+
+[data-dark="true"] .content .work-content{background-color: #272929; border-color: #3d3d3d;}
+
+[data-dark="true"] .content .work-content p,
+[data-dark="true"] .content .work-content h3{color: #d9d9d9;}
+[data-dark="true"] .content .work-content .work-desc .btn-wrap ul li{background-color: #333;}
+[data-dark="true"] .content .work-content .work-desc .btn-wrap ul li a{color: #d9d9d9;}
+
+[data-dark="true"] .footer{background-color: #333; border-top: 1px solid #3d3d3d; color: #d9d9d9;}
+
+[data-dark="true"] .contact-content{background-color: #272929; border-color: #3d3d3d;}
+[data-dark="true"] .contact-content p,
+[data-dark="true"] .contact-content i{color: #d9d9d9;}
+
+
+[data-dark="true"] .section{background-color: #333 !important;}
+
+[data-dark="true"] .design-swiper{background-color: #272929; border-color: #3d3d3d;}
+
+[data-dark="true"] .design-swiper h3,
+[data-dark="true"] .design-swiper p{color: #d9d9d9;}
+
+[data-dark="true"] .content .web-swiper{background-color: #272929; border-color: #3d3d3d;}
+[data-dark="true"] .content .web-swiper .work-content .work-desc .btn-wrap ul li{background-color: #272929; border-color: #3d3d3d;}
