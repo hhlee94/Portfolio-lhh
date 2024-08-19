@@ -1,26 +1,21 @@
 $("document").ready(function () {
   let typed = new Typed("#typed1", {
     stringsElement: "#typed",
-    typeSpeed: 100,
+    typeSpeed: 50,
   });
 
   const swiper = new Swiper(".swiper.web-swiper", {
-    autoplay: {
-      delay: 2000,
-    },
     slidesPerView: 1,
+    spaceBetween:40,
     loop: true,
   });
 
   const swiper2 = new Swiper(".swiper.design-swiper", {
     breakpoints: {
-      360: { spaceBetween: 20, slidesPerView: 1 },
-      1024: { spaceBetween: 30, slidesPerView: 2 },
-      1200: { spaceBetween: 40, slidesPerView: 3 },
+      1024: { spaceBetween: 20, slidesPerView: 1, },
     },
-    autoplay: {
-      delay: 2000,
-    },
+    slidesPerView: 1,
+    spaceBetween: 40, 
     loop: true,
   });
 
@@ -30,7 +25,14 @@ $("document").ready(function () {
   // 프로그레스바가 중첩으로 실행되는것을 막아줌
 
   $(".fullpage").fullpage({
-    sectionsColor: ["#140a42", "#f1f0f5", "#f1f0f5", "#f1f0f5", "#f1f0f5"],
+    sectionsColor: [
+      "#140a42",
+      "#f1f0f5",
+      "#f1f0f5",
+      "#f1f0f5",
+      "#f1f0f5",
+      "#f1f0f5",
+    ],
     navigation: true,
     anchors: ["home", "profile", "publishing", "design", "contact", "footer"],
 
@@ -38,7 +40,8 @@ $("document").ready(function () {
       "홈",
       "프로필",
       "퍼블리싱",
-      "디자인",
+      "웹리디자인",
+      "앱디자인",
       "컨텍트",
       "카피라이트",
     ],
@@ -56,7 +59,7 @@ $("document").ready(function () {
         let bar = new ProgressBar.Line("#html", {
           strokeWidth: 5,
           trailWidth: 5,
-          color: "#FF5733",
+          color: "#006400",
           duration: 1400,
           step: function (state, circle) {
             circle.setText(Math.round(circle.value() * 100) + "%");
@@ -67,7 +70,7 @@ $("document").ready(function () {
         let bar2 = new ProgressBar.Line("#css", {
           strokeWidth: 5,
           trailWidth: 5,
-          color: "#FF5733",
+          color: "#006400",
           duration: 1400,
           step: function (state, circle) {
             circle.setText(Math.round(circle.value() * 100) + "%");
@@ -78,7 +81,7 @@ $("document").ready(function () {
         let bar3 = new ProgressBar.Line("#js", {
           strokeWidth: 5,
           trailWidth: 5,
-          color: "#FF5733",
+          color: "#006400",
           duration: 1400,
           step: function (state, circle) {
             circle.setText(Math.round(circle.value() * 100) + "%");
@@ -89,7 +92,7 @@ $("document").ready(function () {
         let bar4 = new ProgressBar.Line("#ps", {
           strokeWidth: 5,
           trailWidth: 5,
-          color: "#FF5733",
+          color: "#006400",
           duration: 1400,
           step: function (state, circle) {
             circle.setText(Math.round(circle.value() * 100) + "%");
@@ -100,7 +103,7 @@ $("document").ready(function () {
         let bar5 = new ProgressBar.Line("#ai", {
           strokeWidth: 5,
           trailWidth: 5,
-          color: "#FF5733",
+          color: "#006400",
           duration: 1400,
           step: function (state, circle) {
             circle.setText(Math.round(circle.value() * 100) + "%");
@@ -108,16 +111,16 @@ $("document").ready(function () {
         });
         bar5.animate(0.9);
 
-        // let bar6 = new ProgressBar.Line("#of", {
-        //   strokeWidth: 4,
-        //   trailWidth: 4,
-        //   color: "#fac8c8",
-        //   duration: 1400,
-        //   step: function (state, circle) {
-        //     circle.setText(Math.round(circle.value() * 100) + "%");
-        //   },
-        // });
-        // bar6.animate(0.8);
+        let bar6 = new ProgressBar.Line("#figma", {
+          strokeWidth: 5,
+          trailWidth: 5,
+          color: "#006400",
+          duration: 1400,
+          step: function (state, circle) {
+            circle.setText(Math.round(circle.value() * 100) + "%");
+          },
+        });
+        bar6.animate(0.7);
       }
     },
     onLeave: function (origin, destination) {

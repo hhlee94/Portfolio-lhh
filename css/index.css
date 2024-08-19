@@ -1,12 +1,19 @@
 @charset "utf-8";
+@font-face {
+  font-family: 'TTLaundryGothicB';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
 
 #fp-nav ul li .fp-tooltip {
-  background-color: #c3e0a3;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   padding: 5px 20px;
   border-radius: 5px;
-  font-weight: bold;
-  font-size: 12px;
+  font-weight: 200;
+  font-size: 14px;
+  font-family: 'TTLaundryGothicB';
 }
 
 #fp-nav ul li .fp-tooltip.on {
@@ -14,7 +21,7 @@
   opacity: 1;
 }
 #fp-nav ul li a span {
-  background-color: #c3e0a3;
+  background-color: #000000;
 }
 
 .type {
@@ -27,16 +34,24 @@
 }
 #typed1 {
   color: #fff;
-  font-size: 3em;
-  font-weight: bold;
+  font-size: 2em;
   line-height: 70px;
   display: block;
   text-align: center;
-}
-#typed1 em {
-  font-weight: bold;
+  font-family: "TTLaundryGothicB";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2")
+    format("woff2");
+  font-weight: 500;
   font-style: normal;
-  color: #ffffff;
+}
+
+#typed1 em {
+font-size: 1em;
+  color: #000;
+  font-family: "TTLaundryGothicB";
+    format:("woff");
+  font-weight: 700;
+  font-style: normal;
 }
 .type a {
   margin-bottom: 25px;
@@ -113,10 +128,9 @@
   width: 100px;
   height: 30px;
   border-radius: 10px;
-  color: #fff;
-  background-color: #f58990;
-  border: 0.5px solid #ccc;
-  font-weight: bold;
+  font-family: 'TTLaundryGothicB';
+  font-size: 18px;
+  border: 2px solid #000;
 }
 
 .profile-text button:hover {
@@ -184,6 +198,8 @@
 }
 .content .web-swiper .work-content .work-img img {
   width: 100%;
+  height: 400px;
+  margin-top: 10px;
 }
 
 .content .web-swiper .work-content .work-img .pc {
@@ -259,6 +275,8 @@
   padding: 5px;
 }
 .content .web-swiper .work-content .work-desc h3 {
+  position: relative;
+  justify-content: center;
   font-size: 30px;
   font-weight: bold;
   padding-top: 30px;
@@ -274,19 +292,17 @@
   vertical-align: middle;
 }
 .work-desc a {
-  padding: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 세로 방향으로 중앙 정렬 */
+  gap: 10px;
+  margin-top: 10px;
+}
+.work-desc a button {
+  width:100px;
+  height: 30px;
 }
 /* vertical-align: middle; > 디스플레이 속성 인라인 블락에서만 동작함(가로정렬) */
-.content .web-swiper .work-content .work-desc span:nth-child(1) {
-  background-color: #3a5914;
-}
-.content .web-swiper .work-content .work-desc span:nth-child(2) {
-  background-color: #c8e3e1;
-  margin: 0 10px;
-}
-.content .web-swiper .work-content .work-desc span:nth-child(3) {
-  background-color: #f58990;
-}
 
 .content .web-swiper .work-content .work-desc .btn-wrap ul {
   display: flex;
@@ -295,10 +311,11 @@
 }
 
 .content .web-swiper .work-content .work-desc .btn-wrap ul li {
+  width: 100px;
+  height: 30px;
   padding: 2% 6%;
   border-radius: 5px;
-  background-color: #ffc312;
-  border: 2px solid #ddd;
+  border: 2px solid #000;
   cursor: pointer;
   transition: 0.5s;
   text-transform: uppercase;
@@ -343,6 +360,7 @@
 }
 .swiper-slide img {
   width: 100%;
+  height: 400px;
 }
 
 .design-swiper {
@@ -362,8 +380,13 @@
 
 .design-swiper button {
   position: relative;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
+  background-color: #000;
+  color: #FFF;
+  font-family: 'TTLaundryGothicB';
+  border-radius: 5px;
+  font-weight: 50;
+  cursor: pointer;
 }
 .design-swiper h3 {
   position: relative;
@@ -377,15 +400,23 @@
 .design-work-content {
   padding-top: 40px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center;     /* 수직 중앙 정렬 */
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box; /* 패딩과 테두리를 포함하여 전체 크기를 계산 */
+
 }
 .design-work-content .work-img {
-  width: 100%;
-  font-size: 0;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .design-work-content .work-img img {
-  width: 100%;
-  transition: 0.3s;
+  width: 380px;
+  height: 400px;
+  
 }
 .design-work-content:hover .work-img img {
   transform: scale(1.1);
@@ -408,6 +439,7 @@
   top: 0;
   display: none;
 }
+
 
 .window-content {
   width: 80%;
@@ -489,7 +521,6 @@
   background-color: #fff;
   padding: 25px 0;
   text-align: center;
-  color: #9f9f9f;
   letter-spacing: -1px;
 }
 

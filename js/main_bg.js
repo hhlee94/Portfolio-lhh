@@ -12,13 +12,13 @@ $("document").ready(function(){
             "value": "#ffffff"
           },
           "shape": {
-            "type": "circle",
+            "type": "star",
             "stroke": {
               "width": 0,
               "color": "#000000"
             },
             "polygon": {
-              "nb_sides": 12
+              "nb_sides": 10
             },
             "image": {
               "src": "https://www.sprinklr.com/wp-content/themes/sprinklr/assets/images/logo_sprinklr.svg",
@@ -49,7 +49,7 @@ $("document").ready(function(){
           "line_linked": {
             "enable": true,
             "distance": 150,
-            "color": "#ffffff",
+            "color": "#dddddd",
             "opacity": 0.4,
             "width": 1
           },

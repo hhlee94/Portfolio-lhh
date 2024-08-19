@@ -78,6 +78,8 @@ video {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+  font-size: 18px;
+  font-family: "TTLaundryGothicB";
 }
 body {
   line-height: 1;

@@ -1,4 +1,11 @@
 @charset "utf-8";
+@font-face {
+  font-family: "TTLaundryGothicB";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -53,6 +60,7 @@ body {
   transform: scaleX(0);
 }
 .header .nav ul li a {
+  font-size: 20px;
   color: #333;
 }
 .header .nav ul li.on {
@@ -185,79 +193,10 @@ body {
   color: #000;
 }
 
-.font-box {
-  position: fixed;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.font-box .icon {
-  background-color: #fff;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 5px;
-  text-align: center;
-  position: absolute;
-  border-left: #ddd;
-  transition: 0.5s;
-  left: 0px;
-  margin-top: 75px;
-  cursor: pointer;
-}
-
-.font-box .icon.on {
-  left: 170px;
-}
-.font-box .icon i {
-  font-size: 1.3em;
-}
-.font-box ul {
-  position: absolute;
-  width: 170px;
-  background-color: #fff;
-  text-align: center;
-  transition: 0.5s;
-  left: -170px;
-}
-.font-box ul.on {
-  left: 0;
-}
-
-.font-box ul li {
-  line-height: 50px;
-}
-.font-box ul li:nth-child(1) a {
-  font-family: "GmarketSansMedium";
-}
-.font-box ul li:nth-child(2) a {
-  font-family: "S-CoreDream-3Light";
-}
-.font-box ul li:nth-child(3) a {
-  font-family: "IBMPlexSansKR-Regular";
-}
-.font-box ul li:nth-child(4) a {
-  font-family: "Dovemayo_wild";
-}
-/* 폰트 미리보기 기능 1번도 고정시켜야하기때문에 다해준다 */
-
 .typed-cursor {
   display: none;
 }
 /* 커서 깜빡이는거 없애기 */
-
-html {
-  font-family: "GmarketSansMedium";
-}
-html.font1 {
-  font-family: "S-CoreDream-3Light";
-}
-html.font2 {
-  font-family: "IBMPlexSansKR-Regular";
-}
-html.font3 {
-  font-family: "Dovemayo_wild";
-}
 
 .dark-btn {
   position: fixed;
@@ -300,7 +239,10 @@ html.font3 {
 }
 .content .title h3 {
   position: relative;
-  font-weight: bold;
+  font-family: "TTLaundryGothicB";
+  font-weight: 700;
+  font-size: 1em;
+  font-style: normal;
 }
 .content .title h3::after {
   content: "";
@@ -311,38 +253,6 @@ html.font3 {
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
-}
-
-@font-face {
-  font-family: "GmarketSansMedium";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "S-CoreDream-3Light";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "IBMPlexSansKR-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Dovemayo_wild";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/Dovemayo_wild.woff2")
-    format("woff2");
-  font-weight: normal;
-  font-style: normal;
 }
 
 @media screen and (min-width: 641px) and (max-width: 1200px) {
